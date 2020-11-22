@@ -405,6 +405,9 @@ int main(int argc, char **argv)
 	usleep(100);
 	write_reg(0x00);
 	usleep(100);
+	write_reg(0x02);
+
+	usleep(100000);
 
 //copper test
 	write8(0xbfe201, 0x0101);       //CIA OVL
